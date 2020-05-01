@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/LL1"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@drawable/profile_img"
+
+        android:orientation="vertical"
+
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:id="@+id/profile_id"
+            android:layout_width="match_parent"
+            android:layout_height="87dp"
+            android:gravity="bottom"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Welcome John," />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="logout"
+            app:layout_constraintStart_toStartOf="@+id/profile_id"
+            app:layout_constraintTop_toTopOf="@+id/profile_id" />
+
+
+    </android.support.constraint.ConstraintLayout>
+    <Button
+
+        android:id="@+id/reset_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset" />
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_below="@id/topp"
+
+        >
+
+        <android.support.v7.widget.RecyclerView android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/recyclerView3"> </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:id="@+id/tops"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/wash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img"
+            android:padding="8dp"
+            android:text="Washroom 1"
+            android:textColor="#222"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/plumb"
+            android:textSize="20sp"
+            android:layout_below="@id/wash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLUMBING ISSUE"/>
+        <TextView
+            android:id="@+id/plum_num"
+            android:textSize="20sp"
+            android:layout_below="@id/wash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/plumb"
+            android:text="10"/>
+        <TextView
+            android:id="@+id/elect"
+            android:textSize="20sp"
+            android:layout_below="@id/plumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ELECTICAL ISSUE"/>
+        <TextView
+            android:id="@+id/elect_num"
+            android:textSize="20sp"
+            android:layout_below="@id/plum_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/elect"
+            android:text="10"/>
+        <TextView
+            android:id="@+id/cleanly"
+            android:layout_below="@id/elect"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="CLEANLINESS ISSUE"/>
+        <TextView
+            android:id="@+id/clean_num"
+            android:layout_below="@id/elect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/cleanly"
+            android:text="10"/>
+        <TextView
+            android:id="@+id/tissue"
+            android:layout_below="@id/cleanly"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"
+            android:text="PLUMBING ISSUE"/>
+        <TextView
+            android:id="@+id/tissue_num"
+            android:layout_below="@id/cleanly"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tissue"
+            android:text="10"/>
+
+
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

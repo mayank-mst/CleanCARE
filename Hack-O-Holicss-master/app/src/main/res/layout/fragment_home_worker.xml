@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/LL1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_supervisor"
+            android:orientation="vertical"
+            android:paddingLeft="20dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="87dp"
+                android:gravity="bottom"
+                android:text="Welcome Worker"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="24">
+
+            <RelativeLayout
+                android:id="@+id/assign_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Assigned Task"
+                    android:textColor="@color/grey"
+                    android:textSize="40sp" />
+
+            </RelativeLayout>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_below="@id/assign_head">
+
+                <android.support.v7.widget.RecyclerView android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/recyclerViewhome"> </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
